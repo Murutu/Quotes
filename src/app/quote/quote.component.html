@@ -13,7 +13,21 @@
           </div>
 
           <app-quote-form (addQuote)='addNewQuote($event)'></app-quote--form>
+            <!--collects user input and triggers an addition of content from addNewQuote event-->
+          </div>
 
+          <div class="col-8" id="c">
+              <div class="row" id="b">
+                 <h4>Amazing Quotes</h4> 
+              </div>
+              
+              <div class="row">
+                  <div class="card" id="ca" *ngFor='let quote of quotes;let i = index'>
+                   <!--allows one by one display of the quotes-->
+                   
+                  </div>
+              </div>
+          </div>
       </div> 
     </div>
 </div>
