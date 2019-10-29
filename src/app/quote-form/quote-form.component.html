@@ -1,1 +1,11 @@
-<p>quote-form works!</p>
+<div class="container-fluid" id="cf">
+    <div class="row">
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+            <!-- authors details -->
+            <div class="form-group">
+                <label for="name">Original Authors Name</label>
+                <input type="text" class="form-control" id="cf" [(ngModel)]="newQuote.name" name="name" #cf="ngModel"
+            </div>
+        </form>
+    </div>
+</div>
