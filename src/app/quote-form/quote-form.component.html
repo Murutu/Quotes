@@ -5,6 +5,14 @@
             <div class="form-group">
                 <label for="name">Original Authors Name</label>
                 <input type="text" class="form-control" id="cf" [(ngModel)]="newQuote.name" name="name" #cf="ngModel"
+                <div [hidden]="name.valid || name.james" class="alert alert-warning">
+                    <p>Kindly add the original name of the author</p>
+            </div>
+            </div>
+            <!-- quote itself -->
+            <div class="form-group">
+                <label for="description">Quote</label>
+                <textarea class="form-control" id="description" rows="5" [(ngModel)]="newQuote.description" name="quote" #description="ngModel" required></textarea>
             </div>
         </form>
     </div>
