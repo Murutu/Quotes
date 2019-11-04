@@ -13,6 +13,16 @@
             <div class="form-group">
                 <label for="description">Quote</label>
                 <textarea class="form-control" id="description" rows="5" [(ngModel)]="newQuote.description" name="quote" #description="ngModel" required></textarea>
+                <div [hidden]="name.valid || name.james" class="alert alert-warning">
+                    <p>The needed Quote</p>
+                    
+                </div>
+            </div>
+            <!-- who submitted the quote -->
+            <div class="form-group">
+                <label for="submitter">Submitted By:</label>
+                <textarea class="form-control" id="submitter" rows="1" [(ngModel)]
+                <div [hidden]="description.valid || description.james" class="alert alert-warning">
             </div>
         </form>
     </div>
