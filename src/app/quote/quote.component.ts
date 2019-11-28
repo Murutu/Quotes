@@ -9,9 +9,17 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
+    new Quote(1, 'Marcus Aurelius', 'The universe is change; our life is what our thoughts make it.', 'admin', new Date(13,4,131)),
+    new Quote(2, 'Epictetus', 'No man is free who is not master of himself', 'admin', new Date(14,4,120)),
+    new Quote(3, 'Lucius Seneca', 'The mind that is anxious about future events is miserable', 'admin', new Date(25,6,45)),
 
   ]
-  constructor() { }
+  
+  showDescription= false;//boolean setting to hide and display
+
+  addNewQuote(quote) {
+    let quoteLength = this.
+  }
 
   ngOnInit() {
   }
