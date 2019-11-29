@@ -18,7 +18,23 @@ export class QuoteComponent implements OnInit {
   showDescription= false;//boolean setting to hide and display
 
   addNewQuote(quote) {
-    let quoteLength = this.
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
+
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm(`Do you want to delete this Quote? ${this.quotes[index].name}`)//alert
+
+      if (toDelete) { this.quotes.splice(index, 1) }//removes quote
+    }
+  }
+
+
+  toggleQuote() {
+    this.showDescription = ! this.showDescription;// removes quote
   }
 
   ngOnInit() {
