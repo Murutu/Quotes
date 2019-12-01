@@ -1,29 +1,27 @@
 <div class="container-fluid" id="cf">
     <div class="row">
         <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
-            <!-- authors details -->
+            
             <div class="form-group">
                 <label for="name">Original Authors Name</label>
-                <input type="text" class="form-control" id="cf" [(ngModel)]="newQuote.name" name="name" #cf="ngModel"
-                <div [hidden]="name.valid || name.james" class="alert alert-warning">
-                    <p>Kindly add the original name of the author</p>
+                <input type="text" class="form-control" id="cf" [(ngModel)]="name" name="name">
+                
             </div>
-            </div>
-            <!-- quote itself -->
+
+             
             <div class="form-group">
                 <label for="description">Quote</label>
-                <textarea class="form-control" id="description" rows="5" [(ngModel)]="newQuote.description" name="quote" #description="ngModel" required></textarea>
-                <div [hidden]="description.valid || description.james" class="alert alert-warning">
-                    <p>The needed Quote</p>
-                    
-                </div>
+                <textarea class="form-control" id="description" rows="5" [(ngModel)]="description" name="quote"  required></textarea>
+                
             </div>
-            <!-- who submitted the quote -->
+                
             <div class="form-group">
                 <label for="submitter">Submitted By:</label>
-                <textarea class="form-control" id="submitter" rows="1" [(ngModel)]="newQuote.submitter" name="submitter" #description="ngModel" required></textarea>
-                <div [hidden]="description.valid || description.james" class="alert alert-warning">
+                <textarea class="form-control" id="submitter" rows="1" [(ngModel)]="submitter" name="submitter" required></textarea>
+                
             </div>
+            
         </form>
+
     </div>
 </div>
