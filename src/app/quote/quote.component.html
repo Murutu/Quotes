@@ -11,12 +11,14 @@
                 <div class="col-8" id="c">
                     <h4>Amazing Quotes</h4>
                     <div class="card" id="ca" *ngFor='let quote of quotes;let i = index'>
+                          <!-- <p>Author:{{quote.author}}</p>
+                        <p>Submitted by:{{quote.name}}</p> -->
                         <div class="card-title">
                             <h5 font color="lightblue" *ngIf="showDescription">{{quote.name}}</h5>
                         </div>
                         
-                        <button type="button" (click)="toogleQuote()"
-                            class="btn btn-primary">{{showDescription? "Hide": ""}} Quote Details</button>
+                        <!-- <button type="button" (click)="toogleQuote()"
+                            class="btn btn-primary">{{showDescription? "Hide": ""}} Quote Details</button> -->
                         <div class="card-body" id="d">
                             <p id="{{i}}" appHighlight>{{quote.description}}</p>
                         </div>
@@ -25,10 +27,7 @@
                         </div>
                         <div class="row">
                             <div class="col-4">
-                                <app-vote></app-vote>
-                            </div>
-                            <div class="col-6" id="f">
-                                <p>Submitted by {{quote.submitter}}, {{quote.completeDate|dateCount}}</p>
+                                
                             </div>
                             <div class="col-2">
                                 <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'>

@@ -1,1 +1,6 @@
-<button class="btn btn-danger" (click)='quoteDelete(true)'><i class="fa fa-trash"></i>/button>
+Author:{{quote.author}}
+Submitted by:{{quote.name}}
+
+<button class="btn btn-danger" (click)='quoteDelete(true)'>delete></button>
+<button class="btn btn-danger" (click)='voteup()'>upvote</button>
+{{showvoteup}}
