@@ -7,11 +7,11 @@ import { Quote } from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-
+   
   quotes = [
-    new Quote(1, 'Marcus Aurelius', 'The universe is change; our life is what our thoughts make it.', new Date(13,4,1)),
-    new Quote(2, 'Epictetus', 'No man is free who is not master of himself', new Date(14,4,120)),
-    new Quote(3, 'Lucius Seneca', 'The mind that is anxious about future events is miserable', new Date(25,6,45)),
+    new Quote(1, 'Peter', 'The universe is change; our life is what our thoughts make it.',"Marcus Aurelius", new Date(13,4,1)),
+    new Quote(2, 'Don', 'No man is free who is not master of himself',"Epictetus", new Date(14,4,120)),
+    new Quote(3, 'Jav', 'The mind that is anxious about future events is miserable',"Lucius Seneca", new Date(25,6,45)),
 
   ]
   
@@ -41,3 +41,4 @@ export class QuoteComponent implements OnInit {
   }
 
 }
+
