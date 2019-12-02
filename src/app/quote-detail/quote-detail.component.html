@@ -1,6 +1,7 @@
-Author:{{quote.author}}
-Submitted by:{{quote.name}}
+<!-- Author:{{quote.author}}
+Submitted by:{{quote.name}} -->
+timePassed {{quote.completedate|dateCount}}seconds<br>
+ <i class="fa fa-thumbs-up" (click)='voteup()'></i>{{showvoteup}}&nbsp;
+ <i class="fa fa-thumbs-down" (click)='votedown()'></i>{{showvotedown}}&nbsp;<br><br>
+<button class="btn btn-primary" (click)='quoteDelete(true)'>delete</button><br><br>
 
-<button class="btn btn-danger" (click)='quoteDelete(true)'>delete></button>
-<button class="btn btn-danger" (click)='voteup()'>upvote</button>
-{{showvoteup}}

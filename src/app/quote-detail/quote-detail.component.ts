@@ -9,8 +9,8 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 })
 export class QuoteDetailComponent implements OnInit {
  
-  upvote = -1;
-  downvote = -1;
+  upvote = 0;
+  downvote = 0;
   showvoteup = ""
   showvotedown =""
 
@@ -30,8 +30,6 @@ export class QuoteDetailComponent implements OnInit {
   quoteDelete(complete: boolean) {
     this.isComplete.emit(complete);
   }
-
-
 
   ngOnInit() {
   }

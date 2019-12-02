@@ -1,7 +1,6 @@
 .jumbotron {
-    color:red;
+    color:black;
     align-content:center;
-    margin-bottom:0;
     font-size:30px;
     text-align:center;
 }
@@ -24,10 +23,10 @@
     color: brown;
 }
 
-#e {
+/* #e {
     padding:0;
     margin: 0;
-}
+} */
 
 #f {
     font-variant: small-caps;
@@ -42,7 +41,7 @@
     color:black;
     font-size: 16px;
 }
-
+/* 
 .btn {
 padding: 4px;
 margin: 4px;
@@ -56,5 +55,5 @@ font-size: 13px;
 .form-btn {
     margin-left: auto;
     margin-right: auto;
-}
+} */
 

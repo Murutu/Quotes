@@ -37,6 +37,10 @@ export class QuoteComponent implements OnInit {
     this.showDescription = ! this.showDescription;
   }
 
+ 
+    
+constructor(){ }
+
   ngOnInit() {
   }
 

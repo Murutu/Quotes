@@ -6,7 +6,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class DateCountPipe implements PipeTransform {
 
   transform(value: any, ...args: any[]): any {
-    return null;
+    let currentDate =new Date();
+    let timePassed = currentDate.getSeconds();
+    return timePassed;
   }
 
 }

@@ -11,8 +11,8 @@
                 <div class="col-8" id="c">
                     <h4>Amazing Quotes</h4>
                     <div class="card" id="ca" *ngFor='let quote of quotes;let i = index'>
-                          <!-- <p>Author:{{quote.author}}</p>
-                        <p>Submitted by:{{quote.name}}</p> -->
+                          <p>Author:{{quote.author}}</p>
+                        <p>Submitted by:{{quote.name}}</p>
                         <div class="card-title">
                             <h5 font color="lightblue" *ngIf="showDescription">{{quote.name}}</h5>
                         </div>
@@ -26,10 +26,7 @@
 
                         </div>
                         <div class="row">
-                            <div class="col-4">
-                                
-                            </div>
-                            <div class="col-2">
+                            <div class="col-12">
                                 <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'>
                                 </app-quote-detail>
                             </div>
