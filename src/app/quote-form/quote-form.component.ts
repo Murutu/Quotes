@@ -10,7 +10,7 @@ export class QuoteFormComponent implements OnInit {
    id:number;
    name:string;
    description:string;
-   pquote:any;
+   quote:any;
    submitter:string;
    date:Date;
    
@@ -20,9 +20,9 @@ export class QuoteFormComponent implements OnInit {
   @Output() addQuote = new EventEmitter<Quote>();
   
   submitQuote(){
-    this.pquote=new Quote(this.id,this.name,this.description,this.submitter,this.date,);
+    this.quote=new Quote(this.id,this.name,this.description,this.submitter,this.date,);
 
-    this.addQuote.emit(this.pquote);
+    this.addQuote.emit(this.quote);
     
   }
 

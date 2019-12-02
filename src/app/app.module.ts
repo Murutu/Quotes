@@ -7,6 +7,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { DateCountPipe } from './date-count.pipe';
+// import {TimeAgoPipe} from 'time-ago-pipe';
 
 import { FormsModule} from '@angular/forms';
 
@@ -23,6 +24,8 @@ import { FormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    // TimeAgoPipe,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
